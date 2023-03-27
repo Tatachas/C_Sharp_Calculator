@@ -34,15 +34,15 @@ namespace C_Sharp_Calculator
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(35, 36);
+            this.panel1.Location = new System.Drawing.Point(30, 28);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2287, 992);
+            this.panel1.Size = new System.Drawing.Size(1811, 882);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Calculator
             // 
-            this.ClientSize = new System.Drawing.Size(2370, 1078);
+            this.ClientSize = new System.Drawing.Size(2313, 1039);
             this.Controls.Add(this.panel1);
             this.Name = "Calculator";
             this.Text = "Calculator";

@@ -15,18 +15,21 @@ namespace C_Sharp_Calculator
         public Calculator()
         {
             InitializeComponent();
-            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            Pen blck = new Pen(Color.Gray, 5);
+            Pen blck = new Pen(Color.Gray, 2);
             
             int calcRecWidth = 4;
             int calcRecHeight = 5;
             Rectangle[][] calcRecs = new Rectangle[calcRecWidth][];
 
-            for(int i = 0; i < 4; i++)
+            
+
+
+
+            for (int i = 0; i < 4; i++)
             {
                 calcRecs[i] = new Rectangle[calcRecHeight];
             }
@@ -35,9 +38,10 @@ namespace C_Sharp_Calculator
             {
                 for(int h = 0; h < calcRecHeight; h++)
                 {
-                    calcRecs[w][h] = new Rectangle(w * 100, h * 100, 100, 100);
+                    calcRecs[w][h] = new Rectangle(0 + (w * 100),0 +  (h * 100), 100, 100);
                     e.Graphics.DrawRectangle(blck, calcRecs[w][h]);
                     e.Graphics.FillRectangle(Brushes.LightGray,calcRecs[w][h]);
+                    
 
                 }
             }
