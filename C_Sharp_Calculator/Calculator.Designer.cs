@@ -61,12 +61,11 @@ namespace C_Sharp_Calculator
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(331, 3);
+            this.textBox1.Location = new System.Drawing.Point(11, 3);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(313, 82);
+            this.textBox1.Size = new System.Drawing.Size(633, 106);
             this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -74,8 +73,9 @@ namespace C_Sharp_Calculator
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 82);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "/";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.buttonDivision_Click);
             // 
             // button2
             // 
@@ -137,8 +137,9 @@ namespace C_Sharp_Calculator
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(80, 82);
             this.button8.TabIndex = 5;
-            this.button8.Text = "button8";
+            this.button8.Text = "*";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.buttonMultiplication_Click);
             // 
             // button9
             // 
@@ -146,8 +147,9 @@ namespace C_Sharp_Calculator
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(80, 82);
             this.button9.TabIndex = 16;
-            this.button9.Text = "button9";
+            this.button9.Text = "=";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.buttonEqual_Click);
             // 
             // button10
             // 
@@ -164,8 +166,9 @@ namespace C_Sharp_Calculator
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(80, 82);
             this.button11.TabIndex = 14;
-            this.button11.Text = "button11";
+            this.button11.Text = "C";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // button12
             // 
@@ -173,8 +176,9 @@ namespace C_Sharp_Calculator
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(80, 82);
             this.button12.TabIndex = 13;
-            this.button12.Text = "button12";
+            this.button12.Text = "+";
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // button13
             // 
@@ -209,8 +213,9 @@ namespace C_Sharp_Calculator
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(80, 82);
             this.button16.TabIndex = 9;
-            this.button16.Text = "button16";
+            this.button16.Text = "-";
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.Click += new System.EventHandler(this.buttonSubstract_Click);
             // 
             // Calculator
             // 
