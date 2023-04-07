@@ -13,7 +13,7 @@ namespace C_Sharp_Calculator
     public partial class Calculator : Form
     {
         Pen blck = new Pen(Color.Gray, 2);
-        int firstNum, secondNum, finalNum;
+        int firstNum, secondNum;
         string expression = "";
 
         public Calculator()
